@@ -1,0 +1,67 @@
+# ── Dependencies ─────────────────────────────────────────────
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ── Next.js ───────────────────────────────────────────────────
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# ── Electron build output ─────────────────────────────────────
+/build/
+/dist/
+/release/
+
+# ── Python / agent-server ─────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+agent-server/__pycache__/
+agent-server/.mem0_db/
+agent-server/user_stuff/
+agent-server/screenshots/
+agent-server/context/
+agent-server/settings.json
+
+# ── Models (large binary files) ───────────────────────────────
+/models/
+
+# ── Secrets & environment ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Misc generated / local ────────────────────────────────────
+/workspace/
+/screenshots/
+/airi/
+synopsis.tex
+.DS_Store
+*.pem
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── Editor ───────────────────────────────────────────────────
+.vscode/
+*.suo
+*.user
+
+# ── Vercel ───────────────────────────────────────────────────
+.vercel
+
+# ── Testing ──────────────────────────────────────────────────
+/coverage
