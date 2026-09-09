@@ -1,0 +1,11 @@
+pyperclip
+pyautogui
+Pillow
+qwen-agent[gui,rag,code_interpreter,mcp]
+soundfile
+mem0ai 
+qdrant-client
+faster-whisper
+pythonnet
+uvicorn[standard]
+fastapi

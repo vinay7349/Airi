@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* ── Airi Design Token Bridge ──────────────────────────────────────────────
+   Maps Tailwind utility classes to concrete color values that match
+   Fluent 2 webDarkTheme (Night) and webLightTheme (Day).
+   These are the actual hex values from @fluentui/react-components themes.
+   ──────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  /* Day (light) theme — matches webLightTheme */
+  :root {
+    --bg-app:        #f5f5f5;
+    --bg-modal:      #ffffff;
+    --bg-card:       #ebebeb;
+    --bg-hover:      #e0e0e0;
+    --text-primary:  #242424;
+    --text-secondary:#424242;
+    --text-muted:    #616161;
+    --border-default:#d1d1d1;
+    --border-active: #0078d4;
+    --border-error:  #bc2f32;
+    --accent-blue:   #0078d4;
+    --accent-red:    #bc2f32;
+  }
+
+  /* Night (dark) theme — matches webDarkTheme */
+  .dark {
+    --bg-app:        #141414;
+    --bg-modal:      #1f1f1f;
+    --bg-card:       #292929;
+    --bg-hover:      #333333;
+    --text-primary:  #ffffff;
+    --text-secondary:#d6d6d6;
+    --text-muted:    #adadad;
+    --border-default:#404040;
+    --border-active: #479ef5;
+    --border-error:  #f1707b;
+    --accent-blue:   #479ef5;
+    --accent-red:    #f1707b;
+  }
+}
+
+@theme {
+  --color-bg-app:        var(--bg-app);
+  --color-bg-modal:      var(--bg-modal);
+  --color-bg-card:       var(--bg-card);
+  --color-bg-hover:      var(--bg-hover);
+  --color-text-primary:  var(--text-primary);
+  --color-text-secondary:var(--text-secondary);
+  --color-text-muted:    var(--text-muted);
+  --color-border-default:var(--border-default);
+  --color-border-active: var(--border-active);
+  --color-border-error:  var(--border-error);
+  --color-accent-blue:   var(--accent-blue);
+  --color-accent-red:    var(--accent-red);
+}
+
+body {
+  @apply bg-bg-app text-text-primary transition-colors duration-200;
+}
+
+/* ── Scrollbar ── */
+.lean-slider {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-blue) var(--bg-card);
+}
+.lean-slider::-webkit-scrollbar { width: 10px; height: 10px; }
+.lean-slider::-webkit-scrollbar-track { background: var(--bg-card); border-radius: 8px; }
+.lean-slider::-webkit-scrollbar-thumb { background-color: var(--accent-blue); border-radius: 8px; border: 2px solid var(--bg-card); }
+.lean-slider::-webkit-scrollbar-thumb:hover { background-color: var(--accent-red); }
