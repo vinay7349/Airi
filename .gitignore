@@ -39,6 +39,7 @@ agent-server/settings.json
 .env
 .env.*
 !.env.example
+.env.local
 
 # ── Misc generated / local ────────────────────────────────────
 /workspace/
