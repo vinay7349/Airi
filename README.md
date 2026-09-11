@@ -36,15 +36,15 @@ Airi is a Windows desktop AI assistant designed around a **local-first** archite
 ## Screenshots
 
 <div align="center">
-  <img src="screenshots/1.png" alt="Airi main interface" width="92%" />
+  <img src="public/screenshots/screenshot1.png" alt="Airi main interface" width="92%" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="screenshots/2.png" alt="Airi screenshot 2" width="30%" />
-  <img src="screenshots/3.png" alt="Airi screenshot 3" width="30%" />
-  <img src="screenshots/4.png" alt="Airi screenshot 4" width="30%" />
+  <img src="public/screenshots/screenshot2.png" alt="Airi screenshot 2" width="30%" />
+  <img src="public/screenshots/screenshot3.png" alt="Airi screenshot 3" width="30%" />
+  <img src="public/screenshots/screenshot4.png" alt="Airi screenshot 4" width="30%" />
 </div>
 
 ## Features

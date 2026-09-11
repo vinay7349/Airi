@@ -26,7 +26,7 @@ Be respectful. We follow the [Contributor Covenant](https://www.contributor-cove
 
 1. Fork the repository
 2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/airi.git`
-3. Add the upstream remote: `git remote add upstream https://github.com/varshney-ansh/airi.git`
+3. Add the upstream remote: `git remote add upstream
 
 ---
 
@@ -130,7 +130,7 @@ style: fix linting warnings in chatMain
 
 ## Reporting Bugs
 
-Open an [issue](https://github.com/varshney-ansh/airi/issues/new?template=bug_report.md) and include:
+Open an [issue] and include:
 
 - Windows version
 - Steps to reproduce
@@ -141,7 +141,7 @@ Open an [issue](https://github.com/varshney-ansh/airi/issues/new?template=bug_re
 
 ## Requesting Features
 
-Open an [issue](https://github.com/varshney-ansh/airi/issues/new?template=feature_request.md) with:
+Open an [issue] with:
 
 - What problem it solves
 - Proposed solution or API
